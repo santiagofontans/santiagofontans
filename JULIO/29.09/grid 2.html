@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        #contenedor {
+            display: grid;
+            width: 100%;
+            height: 850px;
+            grid-template-areas: 'primero primero primero primero'
+                                 'segundo tercero cuarto quinto'
+                                 'segundo sexto cuarto quinto'
+                                 'segundo sexto septimo quinto'
+                                 'segundo sexto octavo noveno';
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 50% 13% 12% 12% 13%;
+            background-color: yellow; 
+            border-color: black;
+            gap: 5px;                   
+        }
+        
+        #primero {
+            grid-area: primero;
+            border: 10px black solid;
+        }
+        
+        #segundo {
+            grid-area: segundo;
+            border: 10px black solid;
+        }
+
+        #tercero {
+            grid-area: tercero;
+            border: 10px black solid;
+        }
+        #cuarto {
+            grid-area: cuarto;
+            border: 10px black solid;
+        }
+        #quinto {
+            grid-area: quinto;
+            border: 10px black solid;
+        }
+        #sexto {
+            grid-area: sexto;
+            border: 10px black solid;
+        }
+        #septimo {
+            grid-area: septimo;
+            border: 10px black solid;
+        }
+        #octavo {
+            grid-area: octavo;
+            border: 10px black solid;
+        }
+        #noveno {
+            grid-area: noveno;
+            border: 10px black solid;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="primero">1</div>
+        <div id="segundo">2</div>
+        <div id="tercero">3</div>
+        <div id="cuarto">4</div>
+        <div id="quinto">5</div>
+        <div id="sexto">6</div>
+        <div id="septimo">7</div>
+        <div id="octavo">8</div>
+        <div id="noveno">9</div>
+    </div>    
+</body>
+</html>

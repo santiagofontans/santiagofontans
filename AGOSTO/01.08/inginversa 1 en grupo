@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INGENIERIA INVERSA 1</title>
+        <style>
+            body{
+                display: grid;
+                grid-template-areas: "aside main";
+                grid-template-columns: 20% 80%;
+                grid-template-rows: 1fr;
+                height: 100%;
+                width: 100%;
+                gap: 10px;
+            }
+            aside{
+                display: grid;
+                grid-template-areas:
+                "b1"
+                "b2"
+                "b3";
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1.5fr 1.5fr;
+                gap:10px;
+            }
+            main{
+                display: grid;
+                grid-template-areas: 
+                "h1 h1"
+                "mainimage mainimage"
+                "h2 h2"
+                "texto texto"
+                "featured ad";
+                grid-template-columns: 80% 20%;
+                grid-template-rows: 1fr 4fr 0.5fr 0.5fr 4fr;
+                gap: 10px;
+
+            }
+            #b1{
+                grid-area: b1;
+                background-color: gray;
+            }
+            #b2{
+                grid-area: b2;
+                background-color: gray;
+            }
+            #b3{
+                grid-area: b3;
+                background-color: gray;
+            }
+            #mainimage{
+                grid-area: mainimage;
+                background-color: gray;
+            }
+            h1{
+                grid-area: h1;
+            }
+            h2{
+                grid-area: h2;
+            }
+            #texto{
+                grid-area: texto;
+                background-color: gray;
+            }
+            #featured{
+                grid-area: featured;
+                background-color: gray;
+            }
+            #ad{
+                grid-area: ad;
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <aside>
+            <div id="b1"><img src="" alt=""></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+        </aside>
+        <main>
+            <h1>HEADLINE</h1>
+            <div id="mainimage"><img src="" alt=""></div>
+            <h2>Subject</h2>
+            <div id="texto"><p>sometext</p></div>
+            <div id="featured"></div>
+            <div id="ad"></div>
+        </main>
+    </body>
+</html>

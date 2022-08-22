@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 98vh;
+            width: 98vw;
+            gap: 10px;
+            display: grid;
+            grid-template-rows: 1fr 3fr 2fr;
+        }
+        header {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;    
+        }
+        header>div {
+            background-color: violet;
+            margin: 10px;
+        }
+        main {
+            background-color: rgb(22, 208, 187);
+            margin: 10px;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        section>div {
+            background-color: greenyellow;
+            margin: 10px;
+        }
+        @media (max-width: 800px){
+        .primer-header {
+            display: grid;
+            grid-area: primero;
+        }
+        .segundo-header {
+            display: grid;
+            grid-area: segundo;
+        }
+        header {
+            grid-template-areas: 'primero'
+                                'segundo';
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        main {
+            background-color: rgb(22, 208, 187);
+            margin: 10px;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        section>div {
+            background-color: greenyellow;
+            margin: 10px;
+        }
+        #tercer {
+            display: none;
+        }
+        }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <div class="primer-header">Imagen</div>
+            <div class="segundo-header">cont 1</div>
+            <div class="segundo-header">cont 2</div>
+            <div class="segundo-header">cont 3</div>
+            <div class="segundo-header">cont 4</div>
+    </header>
+
+    <main>Main</main>
+
+    <section>
+        <div>sect 1</div>
+        <div>sect 2</div>
+        <div id="tercer">sect 3</div>
+    </section>
+</body>
+</html>

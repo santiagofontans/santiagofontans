@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingenieria inversa 1</title>
+    <style>
+       .todo {
+        display: grid;
+        grid-template-areas: 'toy headline'
+                             'toy story'   
+                             'other story'
+                             'other texto'
+                             'news featured ads';
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr 3fr;
+        width: 800px;
+        height: 800px;                     
+       }
+       #toy {
+        grid-area: toy;
+        width: 225px;
+        height: 250px;
+       }
+       #other {
+        grid-area: other;
+       }
+       #news {
+        grid-area: news;
+       }
+       #headline {
+        grid-area: headline;
+       }
+       #story {
+        grid-area: story;
+        width: 250px;
+        height: 250px;
+       }
+       #texto {
+        grid-area: texto;
+       }
+       #featured {
+        grid-area: featured;
+       }
+       #ads {
+        grid-area: ads;
+        width: 225px;
+        height: 250px;
+       }
+    </style>
+    
+</head>
+<body>
+    <div class="todo">
+        <div>
+            <div>
+                <img src="toy story.png" alt="" id="toy">
+            </div>
+            <div id="other">
+                Other top stories
+            </div>
+            <div id="news">
+                News and buzz
+            </div>
+        </div>
+
+        <div>
+            <h1 id="head">Headline</h1>
+            <div>
+                <img src="toy story main.jpg" alt=""  id="story">
+            </div>
+            <div id="texto">
+                <h4>Subjet</h4>
+                <p>Primer parrafo</p>
+            </div>
+            <div id="featured">
+                Featured
+            </div>
+            <div>
+                <img src="toy story ad.jpg" alt=""  id="ads">
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,13 @@
+inicio aplicacion
+solicito a
+solicito b
+solicito c
+si la ecuacion no tiene raices reales entonces
+    muestro un mensaje con "la ecuacion no tiene raices reales"
+    finalizo aplicacion
+sino, si la ecuacion tiene una raiz doble entonces
+    muestro un mensaje con "la ecuacion tiene una raiz doble"
+    finalizo aplicacion
+sino
+    muestro un mensaje con "la ecuacion tiene dos raices reales"
+finalizo aplicacion

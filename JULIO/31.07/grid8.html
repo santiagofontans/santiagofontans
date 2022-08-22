@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid 8</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 500px;
+            width: 600px;
+            text-align: center;
+            font-size: 50px;
+            padding: 20px;
+            color: aliceblue;
+        }
+
+        #a {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            margin: 3px 3px 3px 3px;
+            background-color: green;
+        }
+        #b {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+            margin: 3px 3px 3px 3px;
+            background-color: orange;
+        }
+        #c {
+            grid-column: 2 / span 2;
+            grid-row: 2 / span 2;
+            margin: 3px 3px 3px 3px;
+            background-color: yellowgreen;
+        }
+        #d {
+            grid-column: 3 / span 1;
+            grid-row: 1 / span 1;
+            margin: 3px 3px 3px 3px;
+            background-color: purple;
+        }
+        #e {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+            margin: 3px 3px 3px 3px;
+            background-color: magenta;
+        }
+        #f {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+            margin: 3px 3px 3px 3px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">A</div>
+    <div id="b">B</div>
+    <div id="c">C</div>
+    <div id="d">D</div>
+    <div id="e">E</div>
+    <div id="f">F</div>
+</body>
+</html>

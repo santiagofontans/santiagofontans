@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingenieria inversa 1 fuera</title>
+    <style>
+        #contenedor {
+            display: grid;
+            grid-template-areas: 'top head'
+            'top main'
+            'other main'
+            'other subjet'
+            'news featured ad';
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 10% 20% 20% 10% 40%;
+            height: 800px;
+            width: 100%;
+            
+        }
+        #top {
+            grid-area: top;
+        }
+        #other {
+            grid-area: other;
+        }
+        #news {
+            grid-area: news;
+        }
+        #head {
+            grid-area: head;
+        }
+        #main {
+            grid-area: main;
+        }
+        #subjet {
+            grid-area: subjet;
+        }
+        #featured {
+            grid-area: featured;
+        }
+        #ad {
+            grid-area: ad;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="top">
+            <img src="" alt="">
+        </div>
+        <div id="other">
+            <span>other top stories</span>
+        </div>
+        <div id="news">
+            <span>news and buzz</span>    
+        </div>
+        <div id="head">
+            <h1>Headline</h1>
+        </div>
+        <div id="main">
+            <img src="" alt="">
+        </div>
+        <div id="subjet">
+            <h4>Subjet</h4>
+            <p> ratione animi nostrum nobis eum iste inventore at, nihil quaerat recusandae voluptate aspernatur amet! Necessitatibus nobis nulla distinctio.</p>
+        </div>
+        <div id="featured">
+            <span>Featured</span>
+        </div>
+        <div id="ad">
+            <img src="" alt="">
+        </div>
+    </div>
+</body>
+</html>

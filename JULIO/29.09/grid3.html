@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        *{
+            margin: 0;
+        }
+        html, body{
+            height: 100%;
+        }
+        body{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "nav article aside"
+            "nav footer footer";
+            grid-template-columns: 0.5fr 4fr 1fr;
+            grid-template-rows: 1fr 8fr 1fr;
+            gap: 5px;
+            height: 100vh;
+       
+        }
+        header{
+            grid-area: header;
+            background-color: yellow;
+        }
+        nav{
+            grid-area: nav;
+            background-color: yellow;
+        }
+        article{
+            grid-area: article;
+            background-color: yellow;
+        }
+        aside{
+            grid-area: aside;
+            background-color: yellow;
+        }
+        footer{
+            grid-area: footer;
+            background-color: yellow;
+        }
+        @media (max-width: 415px){
+            nav{
+                display: none;
+            }
+            #aside2{
+                grid-area: aside2;
+                background-color: yellow;
+            }
+            body{
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "aside"
+            "article"
+            "aside2"
+            "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 6fr 1fr;
+            gap: 5px;
+            height: 100vh;
+            }
+        }
+    </style>
+</head>
+    <body>
+            <header>header</header>
+            <nav>nav</nav>
+            <article>article</article>
+            <aside id = "aside1">ads</aside>
+            <aside id = "aside2">ads</aside>
+            <footer>footer</footer>
+    </body>
+</html>
